@@ -15,7 +15,7 @@ Feel free to make a pull request if you want to change/add something.
 5. Add the following code to your web.config handlers:
 ```
 <remove name="ManifestJsonHandler" />
-<add name="ManifestJsonHandler" type="ManifestJsonPlugin.Handlers.HttpHandlers.ManifestJsonHandler" path="manifest.json" preCondition="integratedMode" verb="*" />
+<add name="ManifestJsonHandler" type="ApparareManifestJson.Handlers.HttpHandlers.ManifestJsonHandler" path="manifest.json" preCondition="integratedMode" verb="*" />
 ```
 
 
