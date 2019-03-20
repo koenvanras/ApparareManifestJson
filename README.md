@@ -7,8 +7,11 @@ A Content App for Umbraco 8 that generates a managable manifest.json file for al
 3. Add a reference from Apparare.ManifestJson.dll to your Umbraco Website.
 4. Build your Umbraco website.
 5. Add the following code to your web.config handlers:
-```<remove name="ManifestJsonHandler" />
-<add name="ManifestJsonHandler" type="ManifestJsonPlugin.Handlers.HttpHandlers.ManifestJsonHandler" path="manifest.json" preCondition="integratedMode" verb="*" />```
+```
+<remove name="ManifestJsonHandler" />
+<add name="ManifestJsonHandler" type="ManifestJsonPlugin.Handlers.HttpHandlers.ManifestJsonHandler" path="manifest.json" preCondition="integratedMode" verb="*" />
+```
+
 
 ## Compatible Umbraco versions
 - 8.0.0
