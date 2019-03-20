@@ -4,5 +4,7 @@ App_Plugins/bin
 App_Plugins/obj
 
 Apparare.ManifestJson/Apparare.ManifestJson.csproj.user
+Apparare.ManifestJson/bin
+Apparare.ManifestJson/obj
 
 packages
