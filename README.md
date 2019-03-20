@@ -7,6 +7,13 @@ If you experience any issues, please let me know!
 
 Feel free to make a pull request if you want to change/add something.
 
+## TODO
+- Create logic to create database table if it doesn't exist
+- Change permissions to only show on root nodes for admin users
+- Add icons to the manifest data
+- Create NuGet package
+- Create logic to add web.config handler if it doesn't exist yet
+
 ## Installation guide
 1. Download the project and add the [plugin folder](https://github.com/koenvanras/ApparareManifestJson/tree/master/App_Plugins/ApparareManifestJson) to the App_Plugins of your Umbraco 8 website.
 2. Open the .sln file with Visual Studio and build the project.
