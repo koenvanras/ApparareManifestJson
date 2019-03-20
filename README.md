@@ -3,6 +3,10 @@ A Content App for Umbraco 8 that generates a managable manifest.json file for al
 
 *This package is in progress, and so is not yet fully functional!*
 
+If you experience any issues, please let me know!
+
+Feel free to make a pull request if you want to change/add something.
+
 ## Installation guide
 1. Download the project and add the [plugin folder](https://github.com/koenvanras/ApparareManifestJson/tree/master/App_Plugins/ApparareManifestJson) to the App_Plugins of your Umbraco 8 website.
 2. Open the .sln file with Visual Studio and build the project.
@@ -18,3 +22,7 @@ A Content App for Umbraco 8 that generates a managable manifest.json file for al
 ## Compatible Umbraco versions
 - 8.0.0
 - 8.0.1
+
+
+## License
+[MIT License](https://github.com/koenvanras/ApparareManifestJson/blob/master/LICENSE)
