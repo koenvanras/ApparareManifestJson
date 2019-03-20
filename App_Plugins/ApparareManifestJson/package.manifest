@@ -1,0 +1,10 @@
+{
+  "javascript": [
+    "https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js",
+    "~/App_Plugins/ApparareManifestJson/js/appararemanifestjson.controller.js"
+  ],
+  "css": [
+    "https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css",
+    "~/App_Plugins/ApparareManifestJson/css/appararemanifestjson.css"
+  ]
+}

@@ -1,0 +1,10 @@
+.vs
+
+App_Plugins/bin
+App_Plugins/obj
+
+Apparare.ManifestJson/Apparare.ManifestJson.csproj.user
+
+packages
+
+Apparare.ManifestJson
