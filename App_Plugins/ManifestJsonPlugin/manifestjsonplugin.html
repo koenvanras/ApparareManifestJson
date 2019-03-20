@@ -1,0 +1,131 @@
+<div ng-controller="Apparare.ManifestJsonPlugin as vm">
+    <div class="umb-box">
+        <div class="umb-box-header">
+            <div class="umb-box-header-title">
+                <div>Links</div>
+            </div>
+        </div>
+        <div class="umb-box-content">
+            <ul class="nav nav-stacked" ng-repeat="value in vm.propertyHostnames" style="margin-bottom:0;">
+                <li><a href="{{value}}" target="_blank"><i class="icon icon-out"></i> <span>{{value}}</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="umb-box">
+        <div class="umb-box-header">
+            <div class="umb-box-header-title">
+                <div>Settings</div>
+            </div>
+        </div>
+        <div class="umb-box-content">
+            <div class="form-horizontal">
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Name
+                            </label>
+                            <div class="controls">
+                                <input type="text" class="manifest-json-plugin__name umb-property-editor" value="{{vm.currentManifestResponse.Name}}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Short name
+                            </label>
+                            <div class="controls">
+                                <input type="text" class="manifest-json-plugin__short-name umb-property-editor" value="{{vm.currentManifestResponse.ShortName}}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Description
+                            </label>
+                            <div class="controls">
+                                <input type="text" class="manifest-json-plugin__description umb-property-editor" value="{{vm.currentManifestResponse.Description}}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Theme color
+                            </label>
+                            <div class="controls">
+                                <input type="text" class="spectrum-color manifest-json-plugin__theme-color umb-property-editor" />
+                                &emsp;<label class="spectrum-display umb-property-editor"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Background color
+                            </label>
+                            <div class="controls">
+                                <input type="text" class="spectrum-color manifest-json-plugin__background-color umb-property-editor" />
+                                &emsp;<label class="spectrum-display umb-property-editor"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <button type="button" class="btn umb-button__button btn-success" ng-click="saveManifestJsonDbData()">Save data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="umb-box">
+        <div class="umb-box-header">
+            <div class="umb-box-header-title">
+                <div>Info</div>
+            </div>
+        </div>
+        <div class="umb-box-content">
+            <div class="form-horizontal">
+                <div class="umb-property">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label">
+                                Version
+                            </label>
+                            <div class="controls">
+
+                                <label class="manifestJsonResponse umb-badge umb-badge--primary umb-badge--xs">{{vm.currentManifestResponse.Version}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="umb-box" ng-show="vm.debug" style="background:#1b264f;">
+        <div class="umb-box-header">
+            <div class="umb-box-header-title" style="color:#fff;opacity:.8;">
+                <div>Debug</div>
+            </div>
+        </div>
+        <div class="umb-box-content">
+            <pre>{{vm.currentManifestResponse}}</pre>
+        </div>
+    </div>
+</div>
