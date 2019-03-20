@@ -1,5 +1,8 @@
 # ApparareManifestJson
+![version](https://img.shields.io/badge/version-1.0.0--alpha-blue.svg)
 [![our-umbraco](https://img.shields.io/badge/our-umbraco-%23ef7d00.svg)](https://our.umbraco.com/packages/backoffice-extensions/apparare-manifest-json/)
+
+
 
 A Content App for Umbraco 8 that generates a managable manifest.json file for all the root nodes.
 
@@ -34,4 +37,4 @@ Feel free to make a pull request if you want to change/add something.
 
 
 ## License
-[MIT License](https://github.com/koenvanras/ApparareManifestJson/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/koenvanras/ApparareManifestJson.svg)](https://github.com/koenvanras/ApparareManifestJson/blob/master/LICENSE)
