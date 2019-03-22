@@ -29,7 +29,24 @@ Feel free to make a pull request if you want to change/add something.
 <remove name="ManifestJsonHandler" />
 <add name="ManifestJsonHandler" type="ApparareManifestJson.Handlers.HttpHandlers.ManifestJsonHandler" path="manifest.json" preCondition="integratedMode" verb="*" />
 ```
-
+6. Add the following table to your database:
+```
+CREATE TABLE [dbo].[ApparareManifestJson_Domains](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[NodeId] [int] NOT NULL,
+	[Version] [varchar](10) NOT NULL,
+	[Name] [varchar](40) NULL,
+	[ShortName] [varchar](40) NULL,
+	[ThemeColor] [varchar](7) NULL,
+	[BackgroundColor] [varchar](7) NULL,
+	[Description] [varchar](50) NULL,
+ CONSTRAINT [PK_ManifestJsonPlugin.Domains] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+```
 
 ## Compatible Umbraco versions
 - 8.0.0
